@@ -1,0 +1,176 @@
+body {
+    background-image: url(./assets/background.png);
+    background-repeat: no-repeat;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    color: #2c3e50;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.logo .logo-png {
+    width: 100px;
+}
+
+.links {
+    display: flex;
+}
+
+.links li {
+    list-style: none;
+    padding: 1.5rem;
+}
+
+.links li a {
+    text-decoration: none;
+}
+
+.links li a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+.search-box {
+    padding-top: 2.3rem;
+    padding-right: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.search-box a {
+    transform: translateY(5%);
+    right: 50px;
+    margin-top: 0.35rem;
+    padding-right: 0.29rem;
+    border-right: 2px solid #2c3350;
+    position: absolute;
+}
+
+.search-box input {
+    border: 2px solid #2c3e50;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.buttons button{
+    border: none;
+    margin-right: 10px;
+    padding: 0.69rem 1.5rem;
+    color: #fff;
+    border-radius: 8px;
+    background: rgb(24, 12, 220);
+    background: linear-gradient(90deg, rgba(24, 12, 220, 1) 0%, rgba(32, 178, 170) 48%, rgba(0, 212, 255, 1) 100%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 4fr 3fr auto;
+    margin-bottom: 0;
+}
+
+.rs-intro {
+    margin: 5.5rem 0 0 7.5rem;
+    line-height: 10px;
+}
+
+.rs-intro .h5 {
+    font-size: 20pt;
+    font-weight: 350;
+}
+
+.rs-intro .h1 {
+    font-size: 69px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.rs-intro .h3 {
+    margin-top: 2px;
+    font-size: 22pt;
+    font-weight: 300;
+}
+
+.anime {
+    font-size: 30px;
+    font-weight: 300;
+    color: rgb(32, 178, 170);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(13) infinite alternate, blink 800ms steps(13) infinite normal;
+    border-right: 2px solid ;
+    
+}
+
+@keyframes typewriter {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 50%;
+        }
+    }
+
+@keyframes blink {
+    from {
+        border-color: rgb(32, 178, 170);
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
+
+.girl-png {
+    margin-left: auto;
+}
+
+.socials {
+    margin-top: auto;
+    margin-bottom: 2rem;
+}
+
+.socials svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0.5rem;
+    opacity: 0.5;
+}
+
+@media (max-width: 1275px) {
+
+    body {
+        background-image: white;
+    }
+
+    .rs-intro {
+        margin: 7.5rem 0 0 4.5rem;
+        line-height: 5px;
+        position: absolute;
+    }
+    
+    .rs-intro .h5 {
+        font-size: 10pt;
+        font-weight: 350;
+    }
+    
+    .rs-intro .h1 {
+        font-size: 34.5px;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    .rs-intro .h3 {
+        margin-top: 1px;
+        font-size: 11pt;
+        font-weight: 300;
+    }
+}
